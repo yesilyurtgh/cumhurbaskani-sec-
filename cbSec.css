@@ -1,0 +1,113 @@
+.cb-div{
+    position: absolute;
+    background-color: antiquewhite;
+    width: 200px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.text{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+
+.inbottom{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    border-radius: 40px;     
+}
+.intop{
+    position:absolute;
+    background-color: rgb(255, 0, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+}
+
+.div-select{
+    width:150px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(119, 142, 156), rgb(217,247,255));
+}
+#cb2{
+   display: none;
+    
+}
+.image-area{
+    width: 150px;
+    height: 150px;
+    background-color: antiquewhite;
+    position: relative;
+    
+}
+.div-kk{
+    position: absolute;
+    z-index: 4;
+
+}
+.div-rte{
+    position: absolute;
+    z-index:3;
+}
+.div-bottom-kk{
+
+    width: 50px;
+    height: 50px;
+    background-image: url(kk.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    color: white;  
+}
+.div-bottom-rte{
+    width: 50px;
+    height: 50px;
+    background-image: url(rte.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    color: black;  
+}
+#label{
+    position: absolute; 
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+}
+
+#cb2:checked +.div-select .inbottom .intop {
+   background-color: rgb(217, 247, 255);
+   transition: 1s backroun-color;
+   left: 40px;
+   transition: left 1s, bacround-color 1s;
+   
+  }
+  #cb2:not(:checked) +.div-select .inbottom .intop {
+    background-color: rgb(255, 0, 0);
+    transition: 1s backroun-color;
+    left: 5px;
+    transition: left 1s, bacround-color 1s;
+    
+   }
+
+#cb2:checked +.div-select +.image-area .div-kk{
+    z-index: 1;
+    transition: 3s z-index linear;
+}
