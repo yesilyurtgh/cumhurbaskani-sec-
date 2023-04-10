@@ -9,6 +9,6 @@ Açıklamalar
 
 * Chechbox ile tıklanınca seçimin değişmesini sağladım 
 
-<h3>Screen Gif</h3>
+<h3>Screen Gif </h3>
 <img width=80% src="screen.gif">
 
